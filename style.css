@@ -17,13 +17,14 @@
     max-width: 720px;
     display: flex;
 }
-.image{
+.images{
     flex-basis: 47%;
     background-color: #241e20;
     transform: scale(1.08);
     box-shadow: -10px  5px 10px 10px rgba(0, 0, 0, 0.1);
+    
 }
-.image img{
+.images img{
     width: 100%;
     display: block;
     padding-top: 100px;
@@ -106,7 +107,7 @@
 .color-select input{
     display: none;
 }
-.color-selec input:checked + span{
+.color-select input:checked + span{
         transform: scale(0.7);
         box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
 }
@@ -136,5 +137,19 @@ form button{
     border: 0;
     margin-top: 80px;
     box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
     cursor: pointer;
 }
